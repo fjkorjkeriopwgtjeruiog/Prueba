@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-06-2019 a las 18:14:25
+-- Tiempo de generación: 10-06-2019 a las 00:37:31
 -- Versión del servidor: 10.1.33-MariaDB
 -- Versión de PHP: 7.2.6
 
@@ -41,11 +41,8 @@ CREATE TABLE `mensajes` (
 --
 
 INSERT INTO `mensajes` (`id`, `user_id`, `mensaje`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Hola', '2019-06-07 22:00:00', '2019-06-07 22:00:00'),
-(2, 1, 'A currar', '2019-06-08 14:05:39', '2019-06-08 14:05:39'),
-(3, 1, 'Seguimos adelante', '2019-06-08 14:06:20', '2019-06-08 14:06:20'),
-(4, 1, 'Vas progresando', '2019-06-08 14:07:40', '2019-06-08 14:07:40'),
-(5, 1, 'Nueva prueba', '2019-06-08 14:08:27', '2019-06-08 14:08:27');
+(1, 1, 'Saludos', '2019-06-09 20:20:09', '2019-06-09 20:20:09'),
+(2, 2, 'Hola jefe', '2019-06-09 20:35:25', '2019-06-09 20:35:25');
 
 -- --------------------------------------------------------
 
@@ -102,7 +99,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Daniel', 'admin@mail.com', NULL, '$2y$10$9W9EaC9X4GUYJeX1aDZjpeTSjFs.P63xdG6.Sidr/F9dDt0GcqbY6', NULL, '2019-06-07 20:07:26', '2019-06-07 20:07:26');
+(1, 'Daniel', 'danielpareja1992@gmail.com', NULL, '$2y$10$Qdy6ulXxYBIWUVvidsrcmOGU00iyIsjzpRumqxB96HLdfVyK1sfp2', NULL, '2019-06-09 20:20:00', '2019-06-09 20:20:00'),
+(2, 'Administrador', 'admin@mail.com', NULL, '$2y$10$bB10pv2X3vqU/uXHb02PeOn7fd8ZJhp8osDdGgv/kKmYfuiVe77Za', NULL, '2019-06-09 20:35:12', '2019-06-09 20:35:12');
 
 --
 -- Índices para tablas volcadas
@@ -142,7 +140,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `mensajes`
 --
 ALTER TABLE `mensajes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `migrations`
@@ -154,7 +152,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
